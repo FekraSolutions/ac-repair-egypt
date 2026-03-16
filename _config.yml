@@ -1,39 +1,5 @@
-# Site Settings
-title: "صيانة تكييفات مصر"
-description: "أفضل خدمات صيانة التكييف في مصر – تصليح الأعطال، شحن فريون، تنظيف وصيانة دورية."
-url: "https://fekrasolutions.github.io/ac-repair-egypt" # your site URL
-baseurl: "/ac-repair-egypt" # GitHub Pages repository folder
-lang: "ar"
-timezone: "Africa/Cairo"
-
-# Build settings
+title: صيانة تكييفات مصر
+theme: minima      # or another theme if you want
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-
-# Exclude unnecessary files from build
-exclude:
-  - README.md
-  - node_modules
-  - package.json
-  - package-lock.json
-
-# Plugins (optional, if you plan SEO or sitemap)
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# SEO defaults
-seo:
-  title: "صيانة تكييفات مصر"
-  description: "خدمات صيانة التكييف في مصر للمنازل والشركات: تصليح، شحن فريون، تنظيف، الصيانة الدورية."
-  lang: "ar"
-  twitter:
-    username: "fekrasolutions"
-  facebook:
-    publisher: "https://www.facebook.com/fekrasolutions"
-
-# Permalinks
-permalink: /:categories/:title/
