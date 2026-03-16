@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صيانة تكييفات مصر</title>
     <style>
-        /* Reset & Body */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background: #f8f8f8; direction: rtl; position: relative; min-height: 100vh; }
+        body { background: #f8f8f8; direction: rtl; min-height: 100vh; display: flex; flex-direction: column; }
 
         /* Background Logo */
         .background-logo {
@@ -21,7 +20,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.08; /* Washed-out effect */
+            opacity: 0.08;
         }
 
         /* Logo Top Left */
@@ -32,18 +31,23 @@
         }
         .logo-container img { height: 60px; }
 
-        /* Cards Container */
-        .cards-container {
-            position: relative;
-            z-index: 2;
+        /* Cards Section */
+        .cards-wrapper {
+            flex: 1; /* Fill remaining space */
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            z-index: 2;
+            position: relative;
             padding: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
             text-align: center;
-            min-height: calc(100vh - 40px); /* full viewport minus logo padding */
         }
 
         .card {
@@ -87,13 +91,9 @@
         @media(max-width: 600px){
             .cards-container {
                 flex-direction: column;
-                min-height: auto;
                 gap: 15px;
-                padding: 20px 10px;
             }
-
             .card { height: 180px; }
-
             .card-text { font-size: 1rem; }
         }
     </style>
@@ -111,23 +111,25 @@
     </div>
 
     <!-- Cards Section -->
-    <div class="cards-container">
-        <a href="#" class="card">
-            <img src="media/Logo.png" alt="طلب صيانة">
-            <div class="card-text">طلب صيانة</div>
-        </a>
-        <a href="#" class="card">
-            <img src="media/Team.jpg" alt="تعرف علينا">
-            <div class="card-text">تعرف علينا</div>
-        </a>
-        <a href="#" class="card">
-            <img src="media/Services.jpg" alt="خدماتنا">
-            <div class="card-text">خدماتنا</div>
-        </a>
-        <a href="#" class="card">
-            <img src="media/Blog.jpg" alt="المدونة">
-            <div class="card-text">المدونة</div>
-        </a>
+    <div class="cards-wrapper">
+        <div class="cards-container">
+            <a href="#" class="card">
+                <img src="media/Repair.png" alt="طلب صيانة">
+                <div class="card-text">طلب صيانة</div>
+            </a>
+            <a href="#" class="card">
+                <img src="media/Team.jpg" alt="تعرف علينا">
+                <div class="card-text">تعرف علينا</div>
+            </a>
+            <a href="#" class="card">
+                <img src="media/Services.jpg" alt="خدماتنا">
+                <div class="card-text">خدماتنا</div>
+            </a>
+            <a href="#" class="card">
+                <img src="media/Blog.jpg" alt="المدونة">
+                <div class="card-text">المدونة</div>
+            </a>
+        </div>
     </div>
 
 </body>
