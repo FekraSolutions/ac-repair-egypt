@@ -162,30 +162,29 @@
         <div class="content">
             <h2>آراء عملائنا</h2>
             <div class="reviews-container" id="reviewsContainer">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>وصلوا في نفس اليوم وصلحوا التكييف في أقل من ساعة. بصراحة خدمة ممتازة جدًا. شكرا ليكم.</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>أسعار ممتازة وناس محترمة.</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>شكرا، شكرا، شكرا ألف مرة على خدمتكم السريعة. هاتصل بيكم كل سنة ان شاء الله</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>أفضل خدمة صيانة مكيفات جربتها، الكفاءة والسرعة رائعة.</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>أنا سعيد بالتعرف عليكم وسعيد بخدمتك السريعة. أنا قلت هادفع مليون جنيه على الجودة اللي شفتها هههههه لكن أسعاركم ممتازة والله. شكرًا من كل قلبي</p>
-                </div>
+               
             </div>
         </div>
     </section>
 
+        <div style="margin-top:30px;">
+    <select id="rating">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+        <option value="2">★★</option>
+        <option value="1">★</option>
+    </select>
+
+    <br><br>
+
+    <textarea id="reviewText" placeholder="اكتب رأيك هنا..." style="width:100%; height:80px;"></textarea>
+
+    <br><br>
+
+    <button onclick="submitReview()">إرسال</button>
+</div>
+    
     <!-- Section 4: Why Choose Us -->
     <section style="background-color:#0a74da;">
         <div class="background-logo">
@@ -213,23 +212,6 @@
             </div>
         </div>
     </section>
-    <div style="margin-top:30px;">
-    <select id="rating">
-        <option value="5">★★★★★</option>
-        <option value="4">★★★★</option>
-        <option value="3">★★★</option>
-        <option value="2">★★</option>
-        <option value="1">★</option>
-    </select>
-
-    <br><br>
-
-    <textarea id="reviewText" placeholder="اكتب رأيك هنا..." style="width:100%; height:80px;"></textarea>
-
-    <br><br>
-
-    <button onclick="submitReview()">إرسال</button>
-</div>
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
