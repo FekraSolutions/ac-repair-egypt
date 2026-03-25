@@ -228,7 +228,10 @@ const db = firebase.firestore();
 
 // Load reviews
 async function loadReviews() {
-    const snapshot = await db.collection("reviews").get();
+    const snapshot = await db.collection("reviews")
+    .where("service", "==", "ac")
+    .orderBy("timestamp", "desc")
+    .get();
     const container = document.getElementById("reviewsContainer");
     container.innerHTML = "";
 
@@ -253,10 +256,12 @@ async function submitReview() {
 
     if (!text) return alert("اكتب تعليق");
 
-    await db.collection("reviews").add({
-        rating: Number(rating),
-        text: text
-    });
+await db.collection("reviews").add({
+    rating: Number(rating),
+    text: text,
+    service: "ac",
+    timestamp: Date.now()
+});
 
     document.getElementById("reviewText").value = "";
 
