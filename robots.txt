@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://fekrasolutions.github.io/ac-repair-egypt/sitemap.xml
+
+Sitemap: https://fekrasolutions.github.io/fixurion-egypt-appliance-fix/sitemap.xml
