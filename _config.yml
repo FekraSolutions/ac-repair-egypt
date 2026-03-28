@@ -1,3 +1,9 @@
-title: كولد لاين صيانة تكييفات في مصر
-theme: minima      # or another theme if you want
+title: "Fixurion - صيانة أجهزة منزلية في مصر"
+url: "https://fekrasolutions.github.io"
+baseurl: "/fixurion-egypt-appliance-fix"
+
+plugins:
+  - jekyll-sitemap
+
 markdown: kramdown
+theme: minima
