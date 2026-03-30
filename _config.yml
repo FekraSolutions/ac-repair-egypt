@@ -4,6 +4,7 @@ baseurl: "/fixurion-egypt-appliance-fix"
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 markdown: kramdown
 theme: minima
