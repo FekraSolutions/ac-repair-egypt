@@ -2,10 +2,8 @@ title: "Fixurion - صيانة أجهزة منزلية في مصر"
 url: "https://fekrasolutions.github.io"
 baseurl: "/fixurion-egypt-appliance-fix"
 
-remote_theme: jekyll/minima
-
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 markdown: kramdown
+theme: minima
