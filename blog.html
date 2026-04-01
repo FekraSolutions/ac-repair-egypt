@@ -93,19 +93,22 @@ z-index:3;
 
 /* blog cards */
 
-.blog-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
-.blog-card{
-background:rgba(0,0,0,0.45);
-border-radius:12px;
-overflow:hidden;
-text-align:right;
-transition:0.3s;
-cursor:pointer;
+.blog-card {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: right;
+  transition: 0.3s;
+  cursor: pointer;
+  /* Add these two lines below */
+  text-decoration: none; 
+  display: block; 
 }
 
 .blog-card:hover{
