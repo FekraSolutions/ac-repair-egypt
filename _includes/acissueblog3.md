@@ -35,7 +35,7 @@
 
 ---
 
-![رموز اعطال التكييف](../media/acissueblog2body.webp)
+![رموز اعطال التكييف](../media/acissueblog3body.webp)
 
 
 ## عوامل "مصرية" تؤثر على كفاءة التكييف
